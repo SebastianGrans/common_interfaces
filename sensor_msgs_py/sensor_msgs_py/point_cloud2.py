@@ -25,13 +25,14 @@
 # CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
-
-
 """
 Serialization of sensor_msgs.PointCloud2 messages.
 
 Author: Tim Field
-ROS2 port by Sebastian Grans
+ROS 2 port by Sebastian Grans
+File originally ported from:
+https://github.com/ros/common_msgs/blob/f48b00d43cdb82ed9367e0956db332484f676598/
+  sensor_msgs/src/sensor_msgs/point_cloud2.py
 """
 
 from collections import namedtuple
