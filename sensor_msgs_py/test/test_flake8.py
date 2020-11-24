@@ -29,16 +29,23 @@
 # LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
 # ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
-
-
-from ament_flake8.main import main_with_errors
 import pytest
+
+# backwards compatability for older ROS2 distros
+try:
+    from ament_flake8.main import main
+except ImportError:
+    from ament_flake8.main import main_with_errors
 
 
 @pytest.mark.flake8
 @pytest.mark.linter
 def test_flake8():
-    rc, errors = main_with_errors(argv=[])
-    assert rc == 0, \
-        'Found %d code style errors / warnings:\n' % len(errors) + \
-        '\n'.join(errors)
+    try:
+        rc = main(argv=[])
+        assert rc == 0, 'Found errros'
+    except NameError:
+        rc, errors = main_with_errors(argv=[])
+        assert rc == 0, \
+            'Found %d code style errors / warnings:\n' % len(errors) + \
+            '\n'.join(errors)
