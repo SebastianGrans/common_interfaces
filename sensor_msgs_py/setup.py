@@ -16,6 +16,6 @@ setup(
     maintainer='Sebastian Grans',
     maintainer_email='sebastian.grans@gmail.com',
     description='A package for easy creation and reading of PointCloud2 messages in Python.',
-    license='BSD',
+    license='Apache 2.0',
     tests_require=['pytest'],
 )

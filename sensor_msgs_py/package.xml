@@ -5,7 +5,7 @@
   <version>2.1.0</version>
   <description>A package for easy creation and reading of PointCloud2 messages in Python.</description>
   <maintainer email="sebastian.grans@gmail.com">Sebastian Grans</maintainer>
-  <license>BSD</license>
+  <license>Apache 2.0</license>
 
   <exec_depend>sensor_msgs</exec_depend>
 
