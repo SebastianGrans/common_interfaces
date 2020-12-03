@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 # Copyright 2020 Open Source Robotics Foundation, Inc. (2020)
 # All rights reserved.
 #
@@ -37,7 +35,12 @@
 Serialization of sensor_msgs.PointCloud2 messages.
 
 Author: Tim Field
+<<<<<<< HEAD
 ROS2 port by Sebastian Grans
+=======
+ROS 2 port by Sebastian Grans
+File originally ported from https://github.com/ros/common_msgs/blob/f48b00d43cdb82ed9367e0956db332484f676598/sensor_msgs/src/sensor_msgs/point_cloud2.py
+>>>>>>> 0cbacd9a7b5d0028621563bf86a6395762237562
 """
 
 from collections import namedtuple
